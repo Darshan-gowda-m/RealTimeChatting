@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color:orange;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ff6600;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000; 
+}
+
+#counts {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+
+#counts p {
+    margin: 0 20px;
+}
+
+.container { 
+    padding: 70px 20px; 
+}
+
+.chat-box {
+    margin-top: 20px; 
+    height: 400px; 
+    overflow-y: auto; 
+    border: 1px solid #ff6600;
+    padding: 15px;
+    background-color: #222; 
+    margin-bottom: 20px; 
+    border-radius: 5px; 
+}
+
+.message-input {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.message-input select,
+.message-input input {
+    margin-right: 10px;
+    padding: 10px;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+#seller-count  {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition for both size and color */
+}
+
+#sell-count  {
+    margin: 0 20px;
+}
+
+#sell-count:hover {
+    color: orangered; 
+    font-size: 18px; 
+}
+#donate-count  {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition for both size and color */
+}
+
+#donate-count  {
+    margin: 0 20px;
+}
+
+#donate-count:hover {
+    color: orangered; 
+    font-size: 18px; 
+}
+#rent-count  {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    transition: font-size 0.3s ease, color 0.3s ease; /* Smooth transition for both size and color */
+}
+
+#rent-count  {
+    margin: 0 20px;
+}
+
+#rent-count:hover {
+    color: orangered; 
+    font-size: 18px; 
+}
+
+.message-input input {
+    flex: 1;
+}
+.message-input input:hover {
+    transition: ease-out;
+    transform: center(1);
+    color:orange
+    
+}
+
+button {
+    padding: 12px;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #e65c00;
+}
+
+.item-posting {
+    margin-top: 30px;
+}
+
+.item-posting form {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-posting input,
+.item-posting select {
+    padding: 12px;
+    margin: 5px 0;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px; 
+    margin-top: 10px;
+    display: block;
+}
+
+#everyone-box {
+    height: 50px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ff6600; 
+    background-color: #333; 
+    margin-top: 10px;
+    font-size: 18px; 
+    color: #ff6600; 
+}
+
+.inline-text {
+    display: inline-flex;
+    align-items: center;
+}
+
+@media (max-width: 600px) {
+    .chat-box {
+        height: 300px; 
+    }
+    
+    .container {
+        padding: 50px 10px; 
+    }
+
+    .message-input {
+        flex-direction: column;
+    }
+
+    .message-input input,
+    .message-input select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
